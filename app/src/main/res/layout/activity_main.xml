@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@android:dimen/app_icon_size"
+        android:layout_marginLeft="@android:dimen/app_icon_size"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:background="@color/btnColor"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:onClick="onClick"
+        android:text="@string/rub" />
+
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn1"
+        android:layout_alignBottom="@id/btn1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/backColor"
+        android:onClick="onClick"
+        android:src="@drawable/arrows" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:layout_marginEnd="@android:dimen/app_icon_size"
+        android:layout_marginRight="@android:dimen/app_icon_size"
+        android:background="@color/btnColor"
+        android:onClick="onClick"
+        android:text="@string/usd" />
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_alignStart="@id/btn1"
+        android:layout_alignLeft="@id/btn1"
+        android:layout_alignEnd="@id/btn1"
+        android:layout_alignRight="@id/btn1"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:hint="@string/_0_0"
+        android:inputType="number"
+        android:outlineSpotShadowColor="@color/btnColor"
+        android:singleLine="true"
+        android:textColor="@color/txtColor"
+        android:textColorHint="@color/txtColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn2"
+        android:layout_alignStart="@id/btn2"
+        android:layout_alignLeft="@id/btn2"
+        android:layout_alignTop="@id/edt"
+        android:layout_alignEnd="@id/btn2"
+        android:layout_alignRight="@id/btn2"
+        android:layout_alignBottom="@id/edt"
+        android:gravity="center"
+        android:text="@string/_0_0"
+        android:textColor="@color/txtColor"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt"
+        android:layout_alignStart="@id/btn1"
+        android:layout_alignLeft="@id/btn1"
+        android:layout_alignEnd="@id/btn2"
+        android:layout_alignRight="@id/btn2"
+        android:layout_marginTop="@android:dimen/app_icon_size" />
+
+</RelativeLayout>

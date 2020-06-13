@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="rub">RUB</string>
+    <string name="usd">USD</string>
+    <string name="eur">EUR</string>
+    <string name="gbp">GBP</string>
+    <string name="cny">CNY</string>
+    <string name="sek">SEK</string>
+    <string name="_0_0">0.0</string>
+    <string-array name="list">
+        <item>RUB</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>CNY</item>
+        <item>SEK</item>
+    </string-array>
+</resources>
